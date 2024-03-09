@@ -1,1 +1,8 @@
 _backup
+mariadb-init
+scripts
+docker-compose.yml
+docker-sync.yml
+docker.mk
+fix-wp-perms.sh
+traefik.yml

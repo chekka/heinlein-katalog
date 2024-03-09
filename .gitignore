@@ -6,3 +6,4 @@ docker-sync.yml
 docker.mk
 fix-wp-perms.sh
 traefik.yml
+.env

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "EncodeSans";
+  font-family: "Encode Sans";
   font-style: normal;
   font-weight: 300;
   src: local("Encode Sans Light"), local("EncodeSans-Light"),
@@ -13,7 +13,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "EncodeSans";
+  font-family: "Encode Sans";
   font-style: normal;
   font-weight: 400;
   src: local("Encode Sans Regular"), local("EncodeSans-Regular"),
@@ -26,7 +26,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "EncodeSans";
+  font-family: "Encode Sans";
   font-style: normal;
   font-weight: 600;
   src: local("Encode Sans SemiBold"), local("EncodeSans-SemiBold"),
@@ -39,7 +39,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: EncodeSansSX;
+  font-family: Encode Sans SX;
   font-style: normal;
   font-weight: 300;
   src: local("Encode Sans SemiExpanded Light"),
@@ -53,7 +53,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: EncodeSansSX;
+  font-family: Encode Sans SX;
   font-style: normal;
   font-weight: 500;
   src: local("Encode Sans SemiExpanded Medium"),
@@ -67,7 +67,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: EncodeSansX;
+  font-family: Encode Sans X;
   font-style: normal;
   font-weight: 400;
   src: local("Encode Sans Expanded Regular"),
@@ -81,7 +81,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: EncodeSansX;
+  font-family: Encode Sans X;
   font-style: normal;
   font-weight: 600;
   src: local("Encode Sans Expanded SemiBold"),
@@ -590,6 +590,7 @@ body.scrolled .Header {
 .Logo img {
   display: block;
   max-width: 100%;
+  max-height: 100px;
   margin-bottom: 0;
   pointer-events: none;
 }
@@ -2689,15 +2690,30 @@ nav.mainnav {
   top: 0;
   left: 0;
   right: 3%;
-  padding: 30px 70px;
-  border-radius: 0 0 30px 0;
+  padding: 70px;  
   background-color: transparent;
   z-index: 30;
   transition-duration: .3s;
 }
 
-.Header.active nav.mainnav {
+nav.mainnav > .flex {
+  position: fixed;
+  top: 100px;
+  left: -10000000000px;
+  opacity: 0;
+  transition: opacity .3s;
+  padding: 30px 70px;
   background-color: #eff2f7;
+  border-radius: 0 0 30px 0;
+  right: 0;
+}
+
+nav.mainnav > .flex.show {
+  left: 0;
+  opacity: 1;
+}
+
+.Header.active nav.mainnav {  
   box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -2745,4 +2761,5 @@ nav.mainnav a span.separator {
   width: 32px;
   height: 32px;
   margin-bottom: 30px;
+  cursor: pointer;
 }

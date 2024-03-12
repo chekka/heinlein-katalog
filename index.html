@@ -1423,44 +1423,48 @@
         <script type="text/javascript" src="main.79fbae9f99cee32af618.js"></script>
         <script>
 			$(document).ready(function(){
+                $('.mainnav a[href*="#"]').click(function (event) {
+                    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+                        if (target.length) {
+                            event.preventDefault();
+                            $("html, body").animate({
+                                scrollTop: target.offset().top - 130,
+                            },1000,
+                            function () {
+                                var $target = $(target);
+                                $target.focus();
+                            }
+                        );
+                    }
+                    var hash = $(this).attr("href").split("#").pop();
+                        window.location.hash = "#" + hash;
+                    }
+                });
 
-			$('.mainnav a[href*="#"]').click(function (event) {
-            if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-              if (target.length) {
-                event.preventDefault();
-                $("html, body").animate(
-                  {
-                    scrollTop: target.offset().top - 130,
-                  },
-                  1000,
-                  function () {
-                    var $target = $(target);
-                    $target.focus();
-                  }
-                );
-              }
-              var hash = $(this).attr("href").split("#").pop();
-              window.location.hash = "#" + hash;
-            }
-          });
+                /* Main menu an header on scroll */
+                window.onscroll = function () {
+                    doSticky();                    
+                };
+                doSticky();
 
-			 /* Main menu an header on scroll */
-			 window.onscroll = function () {
-            doSticky();
-          };
-          doSticky();
+                function doSticky() {
+                    $('nav.mainnav > .flex').removeClass('show');
+                    if (window.pageYOffset > 30) {
+                        $("body").addClass("sticky");
+                    } else {
+                        $("body").removeClass("sticky");
+                    }
+                }
 
-          function doSticky() {
-            if (window.pageYOffset > 30) {
-              $("body").addClass("sticky");
-				} else {
-					$("body").removeClass("sticky");
-				}
-          }
-
-			});
+                $('.navbar-toggler-icon').on('click',function(){
+                    $('nav.mainnav > .flex').toggleClass('show');
+                });
+                $('nav.mainnav > .flex').on('click',function(){
+                    $(this).removeClass('show');                    
+                });
+            });
         </script>
     </body>
 </html>

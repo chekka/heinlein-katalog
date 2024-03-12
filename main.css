@@ -850,6 +850,10 @@ html:not(.can-touch) .ButtonLink:hover .ButtonLink__icon {
   width: 20%;
 }
 
+.Catalog__list section > div.landscape {
+  width: 26%;
+}
+
 @media screen and (max-width: 449px) {
   .Catalog__list section > div {
     width: 100%;
@@ -2607,6 +2611,10 @@ html:not(.can-touch) .ButtonLink:hover .ButtonLink__icon {
   position: relative;
   padding-top: 140%;
   margin-bottom: 1em;
+}
+
+.landscape .Book__image {
+  padding-top: 70%;
 }
 
 .Book__image img {

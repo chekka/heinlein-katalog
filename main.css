@@ -429,7 +429,7 @@ body {
   color: #000;
   min-height: 100vh;
   max-width: 100%;
-  margin: 0;
+  margin: 220px 0 0 0;
   background-color: #fff;
 }
 
@@ -560,6 +560,12 @@ fieldset {
 }
 
 .Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,8 +574,12 @@ fieldset {
   justify-content: flex-end;
   padding-left: 96px;
   padding-right: 96px;
-  padding-bottom: 120px;
   background-color: #eff2f7;
+  transition-duration: .3s;
+}
+
+body.scrolled .Header {
+  height: 120px;
 }
 
 .Logo {
@@ -2673,33 +2683,66 @@ html:not(.can-touch) .Book__image:hover img {
   height: 1px;
 }
 
-/* TOC */
-.Catalog__list.toc {
-  max-width: 740px;
-  padding: 0 20px;
-  margin: 4vh auto 0;
-}
-.Catalog__list.toc section {
-  padding: 0;
+/* Mainnav */
+nav.mainnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 3%;
+  padding: 30px 70px;
+  border-radius: 0 0 30px 0;
+  background-color: transparent;
+  z-index: 30;
+  transition-duration: .3s;
 }
 
+.Header.active nav.mainnav {
+  background-color: #eff2f7;
+  box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.2);
+}
 
-.toc a {
-  font-family: "Encode Sans Semi Expanded", sans-serif;
-  font-weight: 600;
+nav.mainnav a {
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 400;
   letter-spacing: 0.025em;
   color: #434d6e;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-  padding: 9px 12px;
-  background-color: #fff;
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 0 20px 0 20px;
-  margin-bottom: 12px;
+  justify-content: flex-start;
+  padding: 7px 0;
+  margin-bottom: 7px;
+}
+@media (max-width: 800px) {  
+nav.mainnav a {
+  flex-direction: column;
+}
+}
+nav.mainnav a span {
+  display: inline-block;
 }
 
-.toc a span {
+nav.mainnav a span.separator {
+  display: block;
+  background-color: transparent;
+}
+
+@media (min-width: 800px) {  
+  nav.mainnav a span.separator {
+    display: inline-block;
+    margin: 0 7px;
+    height: 22px;
+    width: 1px;
+    background-color: #434d6e;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url(/assets/images/hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 100%;
   display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 30px;
 }

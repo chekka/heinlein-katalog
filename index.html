@@ -1,96 +1,151 @@
 <!DOCTYPE html>
 <html lang="de">
-
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="description" content="Heinlein Plastik-Technik Catalogue" />
-		<meta name="msapplication-TileColor" content="#17254c">
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-		<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#17254c">
-		<link rel="manifest" href="/assets/images/site.webmanifest">
-		<link rel="stylesheet" type="text/css" href="/assets/vendor/css/font-awesome.css">
-		<meta name="referrer" content="origin-when-cross-origin" />
-		<meta name="theme-color" content="#17254c" />
-		<meta property="og:title" content="Heinlein Plastik-Technik Catalogue" />
-		<meta property="og:description" content="Heinlein Plastik-Technik Catalogue" />
-		<meta property="og:image" content="" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="/assets/vendor/js/flipbook.min.js"></script>
-		<title>Heinlein Plastik-Technik Catalogue</title>
-		<link href="main.css" rel="stylesheet">
-	</head>
-
-	<body>
-		<div class="Layout">
-			<header class="Header">
-				<div class="Logo">
-					<a class="Logo__link" href="https://heinlein-plastik.de">
-						<img src="/assets/images/heinlein-plastiktechnik-logo.svg" alt="Logo Heinlein Plastik-Technik" />
-						<span class="is-visuallyhidden"> Zur Heinlein Plastik-Technik Homepage </span>
-					</a>
-				</div>
-				<h1 class="is-visuallyhidden">Heinlein Plastik-Technik Catalogue</h1>
-			</header>
-			<main>
-				<div class="Catalog__list toc">
-					<section>
-						<a href="#katalog"><span>Heinlein Katalog</span><span>Heinlein Catalogue</span></a>
-						<a href="#datenblaetter"><span>Produktdatenblätter</span><span>Product Data Sheets</span></a>
-						<a href="#flipdropper"><span>Flipdropper</span><span>flipdropper</span></a>
-						<a href="#pipettengarnitur"><span>Kindersgesicherte Pipettengarnitur</span><span>Child-resistant Pipette set</span></a>
-						<a href="#mediziner"><span>Medizinische Produkte</span><span>Medical Devices</span></a>
-						<a href="#ksv"><span>Lifestyle Produkte / Schwarze Verschlüsse</span><span>Lifestyle Products / Black Edition</span></a>
-						<a href="#whitepapers"><span>Whitepaper</span><span>Whitepaper</span></a>
-						<a href="#mission-e"><span>Nachhaltigkeit</span><span>Sustainability</span></a>
-						<a href="#technischer-service"><span>Technischer Service</span><span>Technical Support</span></a>
-					</section>
-				</div>
-				<section class="Catalog">
-					<h2 class="is-visuallyhidden">Kataloge</h2>
-					<div class="Catalog__list">
-						<!-- Katalog -->
-						<section id="katalog">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Katalog Deutsch </h3>
-									<div class="Book__image" id="book1-cover">
-										<img src="/assets/images/covers/Gesamtkatalog.jpg" alt="Gesamtkatalog Deutsch" />
-									</div>
-									<div class="Book__actions">
-										<button id="book1" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/Gesamtkatalog_DE.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Catalogue English </h3>
-									<div class="Book__image" id="book2-cover">
-										<img src="/assets/images/covers/Gesamtkatalog.jpg" alt="Catalogue English" />
-									</div>
-									<div class="Book__actions">
-										<button id="book2" class="Button" type="button"> View online </button>
-										<a class="ButtonLink" href="/assets/files/download/Gesamtkatalog_EN.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-							<!--
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="description" content="Heinlein Plastik-Technik Catalogue">
+        <meta name="msapplication-TileColor" content="#17254c">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/images/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/images/favicon-16x16.png"
+        >
+        <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#17254c">
+        <link rel="manifest" href="/assets/images/site.webmanifest">
+        <link rel="stylesheet" type="text/css" href="/assets/vendor/css/font-awesome.css">
+        <meta name="referrer" content="origin-when-cross-origin">
+        <meta name="theme-color" content="#17254c">
+        <meta property="og:title" content="Heinlein Plastik-Technik Catalogue">
+        <meta property="og:description" content="Heinlein Plastik-Technik Catalogue">
+        <meta property="og:image" content="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/assets/vendor/js/flipbook.min.js"></script>
+        <title>Heinlein Plastik-Technik Catalogue</title>
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="Layout">
+            <header class="Header">
+                <div class="Logo">
+                    <a class="Logo__link" href="https://heinlein-plastik.de">
+                        <img src="/assets/images/heinlein-plastiktechnik-logo.svg" alt="Logo Heinlein Plastik-Technik">
+                        <span class="is-visuallyhidden"> Zur Heinlein Plastik-Technik Homepage</span>
+                    </a>
+                </div>
+                <h1 class="is-visuallyhidden">Heinlein Plastik-Technik Catalogue</h1>
+            </header>
+            <nav class="mainnav">
+					<div class="navbar-toggler-icon"></div>
+                <div class="flex flex-column ">
+                    <a href="#katalog">
+                        <span>Heinlein Katalog</span>
+                        <span class="separator"></span>
+                        <span>Heinlein Catalogue</span>
+                    </a>
+                    <a href="#datenblaetter">
+                        <span>Produktdatenblätter</span>
+                        <span class="separator"></span>
+                        <span>Product Data Sheets</span>
+                    </a>
+                    <a href="#flipdropper">
+                        <span>Flipdropper</span>
+                    </a>
+                    <a href="#ksv">
+                        <span>Kindersgesicherte Pipettengarnitur</span>
+                        <span class="separator"></span>
+                        <span>Child-resistant Pipette set</span>
+                    </a>
+                    <a href="#mediziner">
+                        <span>Medizinische Produkte</span>
+                        <span class="separator"></span>
+                        <span>Medical Devices</span>
+                    </a>
+                    <a href="#ksv">
+                        <span>Lifestyle Produkte / Schwarze Verschlüsse</span>
+                        <span class="separator"></span>
+                        <span>Lifestyle Products / Black Edition</span>
+                    </a>
+                    <a href="#whitepapers">
+                        <span>Whitepaper</span>
+                        <span class="separator"></span>
+                        <span>Whitepaper</span>
+                    </a>
+                    <a href="#mission-e">
+                        <span>Nachhaltigkeit</span>
+                        <span class="separator"></span>
+                        <span>Sustainability</span>
+                    </a>
+                    <a href="#technischer-service">
+                        <span>Technischer Service</span>
+                        <span class="separator"></span>
+                        <span>Technical Support</span>
+                    </a>
+                </div>
+            </nav>
+            <main>
+                <section class="Catalog">
+                    <h2 class="is-visuallyhidden">Kataloge</h2>
+                    <div class="Catalog__list">
+                        <!-- Katalog -->
+                        <section id="katalog">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Katalog Deutsch</h3>
+                                    <div class="Book__image" id="book1-cover">
+                                        <img src="/assets/images/covers/Gesamtkatalog.jpg" alt="Gesamtkatalog Deutsch">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book1" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Gesamtkatalog_DE.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Catalogue English</h3>
+                                    <div class="Book__image" id="book2-cover">
+                                        <img src="/assets/images/covers/Gesamtkatalog.jpg" alt="Catalogue English">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book2" class="Button" type="button"> View online</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Gesamtkatalog_EN.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!--
 					<div class="Catalog__list__item fr">
 						<article class="Book">
 							<h3 class="Book__title">
@@ -161,44 +216,56 @@
 						</article>
 					</div>
 					-->
-						</section>
-						<!-- Flippdropper -->
-						<section id="flipdropper">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> flipdropper&#174; Deutsch </h3>
-									<div class="Book__image" id="book3-cover">
-										<img src="/assets/images/covers/flipdropper_Katalog_DE.jpg" alt="Flipdropper Katalog Deutsch" />
-									</div>
-									<div class="Book__actions">
-										<button id="book3" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/flipdropper_Katalog_DE.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> flipdropper&#174; English </h3>
-									<div class="Book__image" id="book4-cover">
-										<img src="/assets/images/covers/flipdropper_Katalog_EN.jpg" alt="Catalogue English" />
-									</div>
-									<div class="Book__actions">
-										<button id="book4" class="Button" type="button"> View online </button>
-										<a class="ButtonLink" href="/assets/files/download/flipdropper_Katalog_EN.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-							<!--
+                        </section>
+                        <!-- Flippdropper -->
+                        <section id="flipdropper">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> flipdropper&#174; Deutsch</h3>
+                                    <div class="Book__image" id="book3-cover">
+                                        <img src="/assets/images/covers/flipdropper_Katalog_DE.jpg" alt="Flipdropper Katalog Deutsch">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book3" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/flipdropper_Katalog_DE.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> flipdropper&#174; English</h3>
+                                    <div class="Book__image" id="book4-cover">
+                                        <img src="/assets/images/covers/flipdropper_Katalog_EN.jpg" alt="Catalogue English">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book4" class="Button" type="button"> View online</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/flipdropper_Katalog_EN.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!--
 					<div class="Catalog__list__item fr">
 						<article class="Book">
 							<h3 class="Book__title">
@@ -246,118 +313,154 @@
 						</article>
 					</div>
 					-->
-						</section>
-						<!-- KSV -->
-						<section id="ksv">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> KSV-Pipette Deutsch </h3>
-									<div class="Book__image" id="book34-cover">
-										<img src="/assets/images/covers/KSV-Pipette-de.jpg" alt="KSV Pipette" />
-									</div>
-									<div class="Book__actions">
-										<button id="book34" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/KSV-Pipette-einzel-de.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> CRC-Pipette English </h3>
-									<div class="Book__image" id="book35-cover">
-										<img src="/assets/images/covers/KSV-Pipette-en.jpg" alt="CRC Pipette" />
-									</div>
-									<div class="Book__actions">
-										<button id="book35" class="Button" type="button"> View online </button>
-										<a class="ButtonLink" href="/assets/files/download/KSV-Pipette-einzel-en.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<!-- Flyer Mediziner -->
-						<section id="mediziner">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title">Flyer Medizinprodukte</h3>
-									<div class="Book__image" id="book37-cover">
-										<img src="/assets/images/covers/Flyer_Medizinprodukte_DE.jpg" alt="Flyer Medizinprodukte" />
-									</div>
-									<div class="Book__actions">
-										<button id="book37" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/Flyer_Medizinprodukte_DE.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title">Flyer Medical Products</h3>
-									<div class="Book__image" id="book38-cover">
-										<img src="/assets/images/covers/Flyer_Medizinprodukte_EN.jpg" alt="Flyerc Medical Products" />
-									</div>
-									<div class="Book__actions">
-										<button id="book37" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/Flyer_Medizinprodukte_EN.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<!-- Mission E -->
-						<section id="mission-e">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title">Mission e Deutsch</h3>
-									<div class="Book__image" id="book5-cover">
-										<img src="/assets/images/covers/Mission_e_Flyer_DE.jpg" alt="Catalogue English" />
-									</div>
-									<div class="Book__actions">
-										<button id="book5" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/Mission_e_Flyer_DE.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Mission e English </h3>
-									<div class="Book__image" id="book6-cover">
-										<img src="/assets/images/covers/Mission_e_Flyer_EN.jpg" alt="Catalogue English" />
-									</div>
-									<div class="Book__actions">
-										<button id="book6" class="Button" type="button"> View online </button>
-										<a class="ButtonLink" href="/assets/files/download/Mission_e_Flyer_EN.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-							<!--
+                        </section>
+                        <!-- KSV -->
+                        <section id="ksv">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> KSV-Pipette Deutsch</h3>
+                                    <div class="Book__image" id="book34-cover">
+                                        <img src="/assets/images/covers/KSV-Pipette-de.jpg" alt="KSV Pipette">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book34" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/KSV-Pipette-einzel-de.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> CRC-Pipette English</h3>
+                                    <div class="Book__image" id="book35-cover">
+                                        <img src="/assets/images/covers/KSV-Pipette-en.jpg" alt="CRC Pipette">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book35" class="Button" type="button"> View online</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/KSV-Pipette-einzel-en.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <!-- Flyer Mediziner -->
+                        <section id="mediziner">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title">Flyer Medizinprodukte</h3>
+                                    <div class="Book__image" id="book37-cover">
+                                        <img src="/assets/images/covers/Flyer_Medizinprodukte_DE.jpg" alt="Flyer Medizinprodukte">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book37" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Flyer_Medizinprodukte_DE.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title">Flyer Medical Products</h3>
+                                    <div class="Book__image" id="book38-cover">
+                                        <img src="/assets/images/covers/Flyer_Medizinprodukte_EN.jpg" alt="Flyerc Medical Products">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book37" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Flyer_Medizinprodukte_EN.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <!-- Mission E -->
+                        <section id="mission-e">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title">Mission e Deutsch</h3>
+                                    <div class="Book__image" id="book5-cover">
+                                        <img src="/assets/images/covers/Mission_e_Flyer_DE.jpg" alt="Catalogue English">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book5" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Mission_e_Flyer_DE.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Mission e English</h3>
+                                    <div class="Book__image" id="book6-cover">
+                                        <img src="/assets/images/covers/Mission_e_Flyer_EN.jpg" alt="Catalogue English">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book6" class="Button" type="button"> View online</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Mission_e_Flyer_EN.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!--
 					<div class="Catalog__list__item fr">
 						<article class="Book">
 							<h3 class="Book__title">
@@ -405,479 +508,678 @@
 						</article>
 					</div>
 					-->
-						</section>
-						<!-- Technischer Service -->Technischer Service <section id="technischer-service">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title">Flyer<br>Technischer Service</h3>
-									<div class="Book__image" id="book39-cover">
-										<img src="/assets/images/covers/flyer-technischer-service-de.jpg" alt="Flyer Technischer Service" />
-									</div>
-									<div class="Book__actions">
-										<button id="book39" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/flyer--technischer-service-de.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title">Flyer<br>Technical Service</h3>
-									<div class="Book__image" id="book40-cover">
-										<img src="/assets/images/covers/flyer-technischer-service-en.jpg" alt="Flyer Technical Service" />
-									</div>
-									<div class="Book__actions">
-										<button id="book40" class="Button" type="button"> View Online </button>
-										<a class="ButtonLink" href="/assets/files/download/flyer--technischer-service-en-es.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-					</div>
-					<div class="Catalog__list lightblue" id="azubi" style="padding-top:70px">
-						<h2 class="h2-strong">Infos f&uuml;r Azubis</h2>
-						<section id="azubi-broschuere">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Azubi-Brosch&uuml;re Deutsch </h3>
-									<div class="Book__image" id="book36-cover">
-										<img src="/assets/images/covers/Azubi_Broschuere.jpg" alt="Azubi Brosch&uuml;re" />
-									</div>
-									<div class="Book__actions">
-										<button id="book36" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/Azubi_Broschuere_einzel.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-						</section>
-					</div>
-					<div class="Catalog__list blue" id="datenblaetter">
-						<h2 class="h2-strong">Produktdatenbl&auml;tter</h2>
-						<h2 class="h2-light">Product data sheets</h2>
-						<section>
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Schraubverschl&uuml;sse<br>Deutsch </h3>
-									<div class="Book__image" id="book14-cover">
-										<img src="/assets/images/covers/data-schraubverschluss.jpg" alt="Schraubverschluss Datenblatt" />
-									</div>
-									<div class="Book__actions">
-										<button id="book14" class="Button" type="button"> ONLINE ANSEHEN </button>
-										<a class="ButtonLink" href="/assets/files/download/data-schraubverschluss.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Screw closures<br>English </h3>
-									<div class="Book__image" id="book15-cover">
-										<img src="/assets/images/covers/data-screw_closures.jpg" alt="Screw Closures Data Sheet" />
-									</div>
-									<div class="Book__actions">
-										<button id="book15" class="Button" type="button"> VIEW ONLINE </button>
-										<a class="ButtonLink" href="/assets/files/download/data-screw_closures.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section>
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Originalit&auml;tsverschl&uuml;sse<br>Deutsch </h3>
-									<div class="Book__image" id="book16-cover">
-										<img src="/assets/images/covers/data-originalitaetsverschluss.jpg" alt="Originalitaetsverschluss Datenblatt" />
-									</div>
-									<div class="Book__actions">
-										<button id="book16" class="Button" type="button"> ONLINE ANSEHEN </button>
-										<a class="ButtonLink" href="/assets/files/download/data-originalitaetsverschluss.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Tamper-evident closures<br>English </h3>
-									<div class="Book__image" id="book17-cover">
-										<img src="/assets/images/covers/data-tamper-evident_closures.jpg" alt="Tamper Evident Closures Data Sheet" />
-									</div>
-									<div class="Book__actions">
-										<button id="book17" class="Button" type="button"> VIEW ONLINE </button>
-										<a class="ButtonLink" href="/assets/files/download/data-tamper-evident_closures.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section>
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Kindersicherheitsverschl&uuml;sse<br>Deutsch </h3>
-									<div class="Book__image" id="book18-cover">
-										<img src="/assets/images/covers/data-kindersicherheitsverschluss.jpg" alt="Kindersicherheitsverschluss Datenblatt" />
-									</div>
-									<div class="Book__actions">
-										<button id="book18" class="Button" type="button"> ONLINE ANSEHEN </button>
-										<a class="ButtonLink" href="/assets/files/download/data-kindersicherheitsverschluss.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Child-resistant closures<br>English </h3>
-									<div class="Book__image" id="book19-cover">
-										<img src="/assets/images/covers/data-child_resistent_closures.jpg" alt="Child Resistant Closures Data Sheet" />
-									</div>
-									<div class="Book__actions">
-										<button id="book19" class="Button" type="button"> VIEW ONLINE </button>
-										<a class="ButtonLink" href="/assets/files/download/data-child_resistent_closures.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section>
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Tropfer &amp; Ausgie&szlig;er<br>Deutsch </h3>
-									<div class="Book__image" id="book20-cover">
-										<img src="/assets/images/covers/data-tropfer_ausgiesser.jpg" alt="Tropfer &amp; Ausgieß&szlig;er Datenblatt" />
-									</div>
-									<div class="Book__actions">
-										<button id="book20" class="Button" type="button"> ONLINE ANSEHEN </button>
-										<a class="ButtonLink" href="/assets/files/download/data-tropfer_ausgiesser.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Droppers &amp; pourers<br>English </h3>
-									<div class="Book__image" id="book21-cover">
-										<img src="/assets/images/covers/data-droppers_pourers.jpg" alt="Droppers &amp; pourers Data Sheet" />
-									</div>
-									<div class="Book__actions">
-										<button id="book21" class="Button" type="button"> VIEW ONLINE </button>
-										<a class="ButtonLink" href="/assets/files/download/data-droppers_pourers.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section>
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Messbecher &amp; Messl&ouml;ffel<br>Deutsch </h3>
-									<div class="Book__image" id="book22-cover">
-										<img src="/assets/images/covers/data-messbecher_loeffel.jpg" alt="Messbecher &amp; Messl&ouml;ffel Datenblatt" />
-									</div>
-									<div class="Book__actions">
-										<button id="book22" class="Button" type="button"> ONLINE ANSEHEN </button>
-										<a class="ButtonLink" href="/assets/files/download/data-messbecher_loeffel.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Measuring cups &amp; spoons<br>English </h3>
-									<div class="Book__image" id="book23-cover">
-										<img src="/assets/images/covers/data-measuring_cups_spoons.jpg" alt="Measuring Cups &amp; Spoons Data Sheet" />
-									</div>
-									<div class="Book__actions">
-										<button id="book23" class="Button" type="button"> VIEW ONLINE </button>
-										<a class="ButtonLink" href="/assets/files/download/data-measuring_cups_spoons.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section id="pipettengarnitur">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Pipettengarnituren<br>Deutsch </h3>
-									<div class="Book__image" id="book24-cover">
-										<img src="/assets/images/covers/data-pipettengarnituren.jpg" alt="Pipettengarnituren Datenblatt" />
-									</div>
-									<div class="Book__actions">
-										<button id="book24" class="Button" type="button"> ONLINE ANSEHEN </button>
-										<a class="ButtonLink" href="/assets/files/download/data-pipettengarnituren.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Pipette sets<br>English </h3>
-									<div class="Book__image" id="book25-cover">
-										<img src="/assets/images/covers/data-pipette_sets.jpg" alt="Pipette Sets Data Sheet" />
-									</div>
-									<div class="Book__actions">
-										<button id="book25" class="Button" type="button"> VIEW ONLINE </button>
-										<a class="ButtonLink" href="/assets/files/download/data-pipette_sets.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section>
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Pinsel &amp; Spatel<br>Deutsch </h3>
-									<div class="Book__image" id="book26-cover">
-										<img src="/assets/images/covers/data-pinsel_spatel.jpg" alt="Pinsel &amp; Spatel Datenblatt" />
-									</div>
-									<div class="Book__actions">
-										<button id="book26" class="Button" type="button"> ONLINE ANSEHEN </button>
-										<a class="ButtonLink" href="/assets/files/download/data-pinsel_spatel.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Brushes &amp; spatulas<br>English </h3>
-									<div class="Book__image" id="book27-cover">
-										<img src="/assets/images/covers/data-brushes_spatulas.jpg" alt="Brushes &amp; Spatulas Data Sheet" />
-									</div>
-									<div class="Book__actions">
-										<button id="book27" class="Button" type="button"> VIEW ONLINE </button>
-										<a class="ButtonLink" href="/assets/files/download/data-brushes_spatulas.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section>
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Dosierspritzen &amp; Adapter<br>Deutsch </h3>
-									<div class="Book__image" id="book28-cover">
-										<img src="/assets/images/covers/data-dosierspritzen_adapter.jpg" alt="Dosierspritzen &amp; Adapter Datenblatt" />
-									</div>
-									<div class="Book__actions">
-										<button id="book28" class="Button" type="button"> ONLINE ANSEHEN </button>
-										<a class="ButtonLink" href="/assets/files/download/data-dosierspritzen_adapter.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Dosing syringes &amp; adapters<br>English </h3>
-									<div class="Book__image" id="book29-cover">
-										<img src="/assets/images/covers/data-dosing_syringes.jpg" alt="Dosing Syringes &amp; Adapters Data Sheet" />
-									</div>
-									<div class="Book__actions">
-										<button id="book29" class="Button" type="button"> VIEW ONLINE </button>
-										<a class="ButtonLink" href="/assets/files/download/data-dosing_syringes.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-					</div>
-					<div class="Catalog__list" id="whitepapers" style="padding-top:70px">
-						<h2 class="h2-strong">Whitepapers</h2>
-						<section id="wp-kindersicherheit">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Whitepaper Kindersicherheit Deutsch </h3>
-									<div class="Book__image" id="book30-cover">
-										<img src="/assets/images/covers/Whitepaper_Kindersicherheit_DE.jpg" alt="Whitepaper Kindersicherheit" />
-									</div>
-									<div class="Book__actions">
-										<button id="book30" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/Whitepaper_Kindersicherheit_DE.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Whitepaper Child Safety<br> English </h3>
-									<div class="Book__image" id="book31-cover">
-										<img src="/assets/images/covers/Whitepaper_Kindersicherheit_EN.jpg" alt="Whitepaper Child Safety" />
-									</div>
-									<div class="Book__actions">
-										<button id="book31" class="Button" type="button"> View online </button>
-										<a class="ButtonLink" href="/assets/files/download/Whitepaper_Kindersicherheit_EN.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section id="wp-tropfer">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title"> Whitepaper Tropfer<br> Deutsch </h3>
-									<div class="Book__image" id="book32-cover">
-										<img src="/assets/images/covers/Whitepaper_Tropfer_DE.jpg" alt="Whitepaper Tropfer" />
-									</div>
-									<div class="Book__actions">
-										<button id="book32" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/Whitepaper_Tropfer_DE.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title"> Whitepaper Droppers<br> English </h3>
-									<div class="Book__image" id="book33-cover">
-										<img src="/assets/images/covers/Whitepaper_Tropfer_EN.jpg" alt="Whitepaper Droppers" />
-									</div>
-									<div class="Book__actions">
-										<button id="book33" class="Button" type="button"> View online </button>
-										<a class="ButtonLink" href="/assets/files/download/Whitepaper_Tropfer_EN.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-						<section id="wp-induvidual">
-							<div class="Catalog__list__item de">
-								<article class="Book">
-									<h3 class="Book__title">Whitepaper Individuell Deutsch</h3>
-									<div class="Book__image" id="book41-cover">
-										<img src="/assets/images/covers/whitepaper--individual--de.jpg" alt="Whitepaper Individuell" />
-									</div>
-									<div class="Book__actions">
-										<button id="book41" class="Button" type="button"> Online ansehen </button>
-										<a class="ButtonLink" href="/assets/files/download/Whitepaper_Individuell_DE.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF herunterladen </a>
-									</div>
-								</article>
-							</div>
-							<div class="Catalog__list__item en">
-								<article class="Book">
-									<h3 class="Book__title">Whitepaper Individual English</h3>
-									<div class="Book__image" id="book42-cover">
-										<img src="/assets/images/covers/whitepaper--individual--en.jpg" alt="Whitepaper Individual" />
-									</div>
-									<div class="Book__actions">
-										<button id="book42" class="Button" type="button"> View online </button>
-										<a class="ButtonLink" href="/assets/files/download/Whitepaper_Individual_EN.pdf" target="_blank" download>
-											<svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
-												<path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875" />
-												<path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z" />
-												<path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z" />
-											</svg> PDF download </a>
-									</div>
-								</article>
-							</div>
-						</section>
-					</div>
-				</section>
-			</main>
-			<footer class="Footer">
-				<p class="Footer__text"> &copy; 2020 | Heinlein Plastik-Technik GmbH | Industriestrasse 7 | 91522 Ansbach </p>
-				<nav class="Footer__nav">
-					<a href="https://www.heinlein-plastik.de/" target="_blank" download rel="noopener noreferrer" class="Footer__nav__link">www.heinlein-plastik.de</a>
-				</nav>
-			</footer>
-		</div>
-		<script>
+                        </section>
+                        <!-- Technischer Service -->Technischer Service
+                        <section id="technischer-service">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title">Flyer
+                                        <br>Technischer Service
+                                    </h3>
+                                    <div class="Book__image" id="book39-cover">
+                                        <img src="/assets/images/covers/flyer-technischer-service-de.jpg" alt="Flyer Technischer Service">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book39" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/flyer--technischer-service-de.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title">Flyer
+                                        <br>Technical Service
+                                    </h3>
+                                    <div class="Book__image" id="book40-cover">
+                                        <img src="/assets/images/covers/flyer-technischer-service-en.jpg" alt="Flyer Technical Service">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book40" class="Button" type="button"> View Online</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/flyer--technischer-service-en-es.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="Catalog__list lightblue" id="azubi" style="padding-top:70px">
+                        <h2 class="h2-strong">Infos f&uuml;r Azubis</h2>
+                        <section id="azubi-broschuere">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Azubi-Brosch&uuml;re Deutsch</h3>
+                                    <div class="Book__image" id="book36-cover">
+                                        <img src="/assets/images/covers/Azubi_Broschuere.jpg" alt="Azubi Brosch&uuml;re">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book36" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Azubi_Broschuere_einzel.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="Catalog__list blue" id="datenblaetter">
+                        <h2 class="h2-strong">Produktdatenbl&auml;tter</h2>
+                        <h2 class="h2-light">Product data sheets</h2>
+                        <section>
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Schraubverschl&uuml;sse
+                                        <br>Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book14-cover">
+                                        <img src="/assets/images/covers/data-schraubverschluss.jpg" alt="Schraubverschluss Datenblatt">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book14" class="Button" type="button"> ONLINE ANSEHEN</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-schraubverschluss.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Screw closures
+                                        <br>English
+                                    </h3>
+                                    <div class="Book__image" id="book15-cover">
+                                        <img src="/assets/images/covers/data-screw_closures.jpg" alt="Screw Closures Data Sheet">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book15" class="Button" type="button"> VIEW ONLINE</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-screw_closures.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Originalit&auml;tsverschl&uuml;sse
+                                        <br>Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book16-cover">
+                                        <img src="/assets/images/covers/data-originalitaetsverschluss.jpg" alt="Originalitaetsverschluss Datenblatt">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book16" class="Button" type="button"> ONLINE ANSEHEN</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-originalitaetsverschluss.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Tamper-evident closures
+                                        <br>English
+                                    </h3>
+                                    <div class="Book__image" id="book17-cover">
+                                        <img src="/assets/images/covers/data-tamper-evident_closures.jpg" alt="Tamper Evident Closures Data Sheet">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book17" class="Button" type="button"> VIEW ONLINE</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-tamper-evident_closures.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Kindersicherheitsverschl&uuml;sse
+                                        <br>Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book18-cover">
+                                        <img src="/assets/images/covers/data-kindersicherheitsverschluss.jpg" alt="Kindersicherheitsverschluss Datenblatt">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book18" class="Button" type="button"> ONLINE ANSEHEN</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-kindersicherheitsverschluss.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Child-resistant closures
+                                        <br>English
+                                    </h3>
+                                    <div class="Book__image" id="book19-cover">
+                                        <img src="/assets/images/covers/data-child_resistent_closures.jpg" alt="Child Resistant Closures Data Sheet">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book19" class="Button" type="button"> VIEW ONLINE</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-child_resistent_closures.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Tropfer &amp; Ausgie&szlig;er
+                                        <br>Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book20-cover">
+                                        <img src="/assets/images/covers/data-tropfer_ausgiesser.jpg" alt="Tropfer &amp; Ausgieß&szlig;er Datenblatt">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book20" class="Button" type="button"> ONLINE ANSEHEN</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-tropfer_ausgiesser.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Droppers &amp; pourers
+                                        <br>English
+                                    </h3>
+                                    <div class="Book__image" id="book21-cover">
+                                        <img src="/assets/images/covers/data-droppers_pourers.jpg" alt="Droppers &amp; pourers Data Sheet">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book21" class="Button" type="button"> VIEW ONLINE</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-droppers_pourers.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Messbecher &amp; Messl&ouml;ffel
+                                        <br>Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book22-cover">
+                                        <img src="/assets/images/covers/data-messbecher_loeffel.jpg" alt="Messbecher &amp; Messl&ouml;ffel Datenblatt">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book22" class="Button" type="button"> ONLINE ANSEHEN</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-messbecher_loeffel.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Measuring cups &amp; spoons
+                                        <br>English
+                                    </h3>
+                                    <div class="Book__image" id="book23-cover">
+                                        <img src="/assets/images/covers/data-measuring_cups_spoons.jpg" alt="Measuring Cups &amp; Spoons Data Sheet">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book23" class="Button" type="button"> VIEW ONLINE</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-measuring_cups_spoons.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section id="pipettengarnitur">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Pipettengarnituren
+                                        <br>Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book24-cover">
+                                        <img src="/assets/images/covers/data-pipettengarnituren.jpg" alt="Pipettengarnituren Datenblatt">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book24" class="Button" type="button"> ONLINE ANSEHEN</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-pipettengarnituren.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Pipette sets
+                                        <br>English
+                                    </h3>
+                                    <div class="Book__image" id="book25-cover">
+                                        <img src="/assets/images/covers/data-pipette_sets.jpg" alt="Pipette Sets Data Sheet">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book25" class="Button" type="button"> VIEW ONLINE</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-pipette_sets.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Pinsel &amp; Spatel
+                                        <br>Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book26-cover">
+                                        <img src="/assets/images/covers/data-pinsel_spatel.jpg" alt="Pinsel &amp; Spatel Datenblatt">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book26" class="Button" type="button"> ONLINE ANSEHEN</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-pinsel_spatel.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Brushes &amp; spatulas
+                                        <br>English
+                                    </h3>
+                                    <div class="Book__image" id="book27-cover">
+                                        <img src="/assets/images/covers/data-brushes_spatulas.jpg" alt="Brushes &amp; Spatulas Data Sheet">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book27" class="Button" type="button"> VIEW ONLINE</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-brushes_spatulas.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Dosierspritzen &amp; Adapter
+                                        <br>Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book28-cover">
+                                        <img src="/assets/images/covers/data-dosierspritzen_adapter.jpg" alt="Dosierspritzen &amp; Adapter Datenblatt">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book28" class="Button" type="button"> ONLINE ANSEHEN</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-dosierspritzen_adapter.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Dosing syringes &amp; adapters
+                                        <br>English
+                                    </h3>
+                                    <div class="Book__image" id="book29-cover">
+                                        <img src="/assets/images/covers/data-dosing_syringes.jpg" alt="Dosing Syringes &amp; Adapters Data Sheet">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book29" class="Button" type="button"> VIEW ONLINE</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/data-dosing_syringes.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="Catalog__list" id="whitepapers" style="padding-top:70px">
+                        <h2 class="h2-strong">Whitepapers</h2>
+                        <section id="wp-kindersicherheit">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Whitepaper Kindersicherheit Deutsch</h3>
+                                    <div class="Book__image" id="book30-cover">
+                                        <img src="/assets/images/covers/Whitepaper_Kindersicherheit_DE.jpg" alt="Whitepaper Kindersicherheit">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book30" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Whitepaper_Kindersicherheit_DE.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Whitepaper Child Safety
+                                        <br> English
+                                    </h3>
+                                    <div class="Book__image" id="book31-cover">
+                                        <img src="/assets/images/covers/Whitepaper_Kindersicherheit_EN.jpg" alt="Whitepaper Child Safety">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book31" class="Button" type="button"> View online</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Whitepaper_Kindersicherheit_EN.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section id="wp-tropfer">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Whitepaper Tropfer
+                                        <br> Deutsch
+                                    </h3>
+                                    <div class="Book__image" id="book32-cover">
+                                        <img src="/assets/images/covers/Whitepaper_Tropfer_DE.jpg" alt="Whitepaper Tropfer">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book32" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Whitepaper_Tropfer_DE.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title"> Whitepaper Droppers
+                                        <br> English
+                                    </h3>
+                                    <div class="Book__image" id="book33-cover">
+                                        <img src="/assets/images/covers/Whitepaper_Tropfer_EN.jpg" alt="Whitepaper Droppers">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book33" class="Button" type="button"> View online</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Whitepaper_Tropfer_EN.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section id="wp-induvidual">
+                            <div class="Catalog__list__item de">
+                                <article class="Book">
+                                    <h3 class="Book__title">Whitepaper Individuell Deutsch</h3>
+                                    <div class="Book__image" id="book41-cover">
+                                        <img src="/assets/images/covers/whitepaper--individual--de.jpg" alt="Whitepaper Individuell">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book41" class="Button" type="button"> Online ansehen</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Whitepaper_Individuell_DE.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF herunterladen
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="Catalog__list__item en">
+                                <article class="Book">
+                                    <h3 class="Book__title">Whitepaper Individual English</h3>
+                                    <div class="Book__image" id="book42-cover">
+                                        <img src="/assets/images/covers/whitepaper--individual--en.jpg" alt="Whitepaper Individual">
+                                    </div>
+                                    <div class="Book__actions">
+                                        <button id="book42" class="Button" type="button"> View online</button>
+                                        <a
+                                            class="ButtonLink"
+                                            href="/assets/files/download/Whitepaper_Individual_EN.pdf"
+                                            target="_blank"
+                                            download
+                                        >
+                                            <svg class="ButtonLink__icon" viewBox="0 0 10.0575 10.05875">
+                                                <path d="M5.02875 9.87125v.1875c2.7775-.001 5.02875-2.2525 5.02875-5.02875 0-2.7775-2.25125-5.02875-5.02875-5.03C2.25125.001 0 2.2525 0 5.03c0 2.77625 2.25125 5.0275 5.02875 5.02875v-.375C2.45875 9.67875.38 7.59875.375 5.03.38 2.46 2.45875.38 5.02875.375c2.57.005 4.65 2.085 4.65375 4.655-.004 2.56875-2.08375 4.64875-4.65375 4.65375v.1875"/>
+                                                <path class="ButtonLink__icon__arrow" d="M4.84 6.46h.375V1.74368H4.84V6.46z"/>
+                                                <path class="ButtonLink__icon__arrow" d="M6.4525 4.69625l-1.42625 1.495-1.39375-1.4375-.26875.26125 1.665 1.71625 1.695-1.77625-.27125-.25875M3.40375 8.01875h3.27979v-.375H3.40375v.375z"/>
+                                            </svg> PDF download
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </main>
+            <footer class="Footer">
+                <p class="Footer__text"> &copy; 2020 | Heinlein Plastik-Technik GmbH | Industriestrasse 7 | 91522 Ansbach</p>
+                <nav class="Footer__nav">
+                    <a
+                        href="https://www.heinlein-plastik.de/"
+                        target="_blank"
+                        download
+                        rel="noopener noreferrer"
+                        class="Footer__nav__link"
+                    >www.heinlein-plastik.de</a>
+                </nav>
+            </footer>
+        </div>
+        <script>
 			$(document).ready(function ()
 			{
 				const pdfConfig = {
@@ -1094,7 +1396,7 @@
 					,
 					{
 						elSelector: '#book40, #book40-cover',
-						pdfUrl: 'assets/files/flyer--technischer-service-en-ds.pdf',
+						pdfUrl: 'assets/files/flyer--technischer-service-en.pdf',
 					},
 					{
 						elSelector: '#book41, #book41-cover',
@@ -1116,9 +1418,49 @@
 				})
 
 			});
-		</script>
-		<script type="text/javascript" src="runtime.5332893740da3c8955aa.js"></script>
-		<script type="text/javascript" src="main.79fbae9f99cee32af618.js"></script>
-	</body>
+        </script>
+        <script type="text/javascript" src="runtime.5332893740da3c8955aa.js"></script>
+        <script type="text/javascript" src="main.79fbae9f99cee32af618.js"></script>
+        <script>
+			$(document).ready(function(){
 
+			$('.mainnav a[href*="#"]').click(function (event) {
+            if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+              if (target.length) {
+                event.preventDefault();
+                $("html, body").animate(
+                  {
+                    scrollTop: target.offset().top - 130,
+                  },
+                  1000,
+                  function () {
+                    var $target = $(target);
+                    $target.focus();
+                  }
+                );
+              }
+              var hash = $(this).attr("href").split("#").pop();
+              window.location.hash = "#" + hash;
+            }
+          });
+
+			 /* Main menu an header on scroll */
+			 window.onscroll = function () {
+            doSticky();
+          };
+          doSticky();
+
+          function doSticky() {
+            if (window.pageYOffset > 30) {
+              $("body").addClass("sticky");
+				} else {
+					$("body").removeClass("sticky");
+				}
+          }
+
+			});
+        </script>
+    </body>
 </html>

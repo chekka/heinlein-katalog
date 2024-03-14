@@ -7,3 +7,6 @@ docker.mk
 fix-wp-perms.sh
 traefik.yml
 .env
+
+heinlein
+heinlein.pub

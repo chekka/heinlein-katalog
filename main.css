@@ -429,7 +429,7 @@ body {
   color: #000;
   min-height: 100vh;
   max-width: 100%;
-  margin: 220px 0 0 0;
+  margin: 120px 0 0 0;
   background-color: #fff;
 }
 
@@ -505,13 +505,13 @@ ul {
 }
 
 a {
-  color: #aa8461;
+  color: var(--gold);
   text-decoration: none;
 }
 
 html:not(.can-touch) a:active,
 html:not(.can-touch) a:hover {
-  color: #7f6445;
+  color: var(--gold-dunkel);
 }
 
 h1,
@@ -565,15 +565,15 @@ fieldset {
   left: 0;
   right: 0;
   z-index: 12;
-  height: 220px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding-left: 96px;
-  padding-right: 96px;
+  padding-left: 0;
+  padding-right: 7vw;
   background-color: #eff2f7;
   transition-duration: .3s;
 }
@@ -584,8 +584,14 @@ body.scrolled .Header {
 
 .Logo {
   display: block;
-  width: 240px;
+  width: 220px;
 }
+
+/* @media (max-width: 560px) {
+  .Logo {
+    width: 160px;
+  }
+} */
 
 .Logo img {
   display: block;
@@ -2695,29 +2701,30 @@ html:not(.can-touch) .Book__image:hover img {
 /* Mainnav */
 nav.mainnav {
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 3%;
-  padding: 70px;  
-  background-color: transparent;
-  z-index: 30;
+  padding: 45px 0 0 70px;
+  background-color: transparent;  
   transition-duration: .3s;
 }
 
 nav.mainnav > .flex {
-  position: fixed;
+  position: fixed;  
   top: 100px;
-  left: -10000000000px;
-  opacity: 0;
-  transition: opacity .3s;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: transform .3s;
   padding: 30px 70px;
   background-color: #eff2f7;
   border-radius: 0 0 30px 0;
   right: 0;
 }
 
-nav.mainnav > .flex.show {
-  left: 0;
+.nav-open nav.mainnav > .flex {
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -2726,6 +2733,7 @@ nav.mainnav > .flex.show {
 }
 
 nav.mainnav a {
+  position: relative;
   font-family: "Encode Sans", sans-serif;
   font-weight: 400;
   letter-spacing: 0.025em;
@@ -2735,7 +2743,29 @@ nav.mainnav a {
   justify-content: flex-start;
   padding: 7px 0;
   margin-bottom: 7px;
+  padding-left: 30px;
 }
+
+nav.mainnav a:before {
+  content: "";  
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 1px solid #7d8ca3;
+  border-left: 1px solid #7d8ca3;
+  color: transparent;
+  transform: rotate(135deg);
+  left: 0px;
+  top: 11px;
+}
+
+nav.mainnav a:hover:before {
+  border-color: var(--gold-dunkel);
+}
+
 @media (max-width: 800px) {  
 nav.mainnav a {
   flex-direction: column;
@@ -2761,6 +2791,9 @@ nav.mainnav a span.separator {
 }
 
 .navbar-toggler-icon {
+  position: absolute;
+  left: 7vw;
+  top: 40px;
   background-image: url(/assets/images/hamburger.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2770,4 +2803,8 @@ nav.mainnav a span.separator {
   height: 32px;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.nav-open .navbar-toggler-icon {
+  background-position: -32px 0;
 }

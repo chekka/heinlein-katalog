@@ -37,6 +37,7 @@
     <body>
         <div class="Layout">
             <header class="Header">
+                <div class="navbar-toggler-icon"></div>
                 <div class="Logo">
                     <a class="Logo__link" href="https://heinlein-plastik.de">
                         <img src="/assets/images/heinlein-plastiktechnik-logo.svg" alt="Logo Heinlein Plastik-Technik">
@@ -45,8 +46,7 @@
                 </div>
                 <h1 class="is-visuallyhidden">Heinlein Plastik-Technik Catalogue</h1>
             </header>
-            <nav class="mainnav">
-					<div class="navbar-toggler-icon"></div>
+            <nav class="mainnav">					
                 <div class="flex flex-column ">
                     <a href="#katalog">
                         <span>Heinlein Katalog</span>
@@ -59,7 +59,7 @@
                         <span>Product Data Sheets</span>
                     </a>
                     <a href="#flipdropper">
-                        <span>Flipdropper</span>
+                        <span>Flipdropper<sup>&reg;</sup></span>
                     </a>
                     <a href="#ksv">
                         <span>Kindersgesicherte Pipettengarnitur</span>
@@ -72,14 +72,10 @@
                         <span>Medical Devices</span>
                     </a>
                     <a href="#lifestyle">
-                        <span>Lifestyle Produkte / Schwarze Verschlüsse</span>
-                        <span class="separator"></span>
-                        <span>Lifestyle Products / Black Edition</span>
+                        <span>Lifestyle Produkte</span><span class="separator"></span><span>Lifestyle Products, Black Edition</span>
                     </a>
                     <a href="#whitepapers">
-                        <span>Whitepaper</span>
-                        <span class="separator"></span>
-                        <span>Whitepaper</span>
+                        <span>Whitepapers</span>
                     </a>
                     <a href="#mission-e">
                         <span>Nachhaltigkeit</span>
@@ -1504,24 +1500,19 @@
 
                 /* Main menu an header on scroll */
                 window.onscroll = function () {
-                    doSticky();                    
+                    hideNav();
                 };
-                doSticky();
+                hideNav();
 
-                function doSticky() {
-                    $('nav.mainnav > .flex').removeClass('show');
-                    if (window.pageYOffset > 30) {
-                        $("body").addClass("sticky");
-                    } else {
-                        $("body").removeClass("sticky");
-                    }
+                function hideNav() {
+                    $('body').removeClass('nav-open');
                 }
 
-                $('.navbar-toggler-icon').on('click',function(){
-                    $('nav.mainnav > .flex').toggleClass('show');
+                $('.navbar-toggler-icon').on('click', function(){
+                    $('body').toggleClass('nav-open');
                 });
-                $('nav.mainnav > .flex').on('click',function(){
-                    $(this).removeClass('show');                    
+                $('nav.mainnav a').bind('click',function(){
+                    $('body').removeClass('nav-open');
                 });
             });
         </script>
